@@ -179,7 +179,7 @@
           </div>
 
           <div class="form-block">
-            <form action="">
+            <form action="" id='form'>
               <div class="flex-form-blocks">
                 <div class="form-name-block">
                   <span>Ваше имя</span><br><input class="name" type="text" name="name" placeholder="Иван Иванов"
@@ -230,6 +230,9 @@ upButton.classList.add('hidden-arrow');
 upButton.onclick = function(){
   window.scrollTo(0,0);
 }
+
+  getElementById('form').addEventListener('submit', (e) => {e.preventDefault()})
+
 </script>
 </body>
 
